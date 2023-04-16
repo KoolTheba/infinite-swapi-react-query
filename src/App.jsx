@@ -3,7 +3,7 @@ import {
   QueryClientProvider,
 } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
-// import { InfinitePeople } from "./people/InfinitePeople";
+import InfinitePeople from './people/InfinitePeople';
 // import { InfiniteSpecies } from "./species/InfiniteSpecies";
 import "./App.css";
 
@@ -14,7 +14,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="App">
         <h1>Infinite SWAPI</h1>
-        {/* <InfinitePeople /> */}
+        <InfinitePeople />
         {/* <InfiniteSpecies /> */}
       </div>
       <ReactQueryDevtools initialIsOpen={false} />
